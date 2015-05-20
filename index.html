@@ -22,7 +22,7 @@
     }
     .case-3 {
         height: 326px;
-        margin-bottom: -50px;
+        margin-bottom: -72px;
     }
     div[class*="bg-case-"] {
         background-size: cover;
@@ -55,6 +55,16 @@
         -webkit-clip-path: polygon(3% 25%, 14% 0%, 100% 0%, 100% 78%, 14% 78%, 3% 100%);
         clip-path: polygon(3% 25%, 14% 0%, 100% 0%, 100% 78%, 14% 78%, 3% 100%);
     }
+    .case-bottom {
+        background-color: #999;
+        height: 74px;
+        margin-left: 20px;
+        width: 673px;
+        -webkit-clip-path: url("#clip-svg-path-bottom");
+        clip-path: url("#clip-svg-path-bottom");
+        -webkit-clip-path: polygon(12% -11%, 0% 0%, 100% 0%, 88% 100%, 0% 100%, 0% 98%)
+        -clip-path: polygon(12% -11%, 0% 0%, 100% 0%, 88% 100%, 0% 100%, 0% 98%)
+    }
     .spine {
         position: absolute;
         background-color: #eee;
@@ -72,17 +82,20 @@
         margin: 0;
         float: left;
     }
-    .case-bottom {
+    .case-description {
         background-image: url("./img/bottom.png");
         background-repeat: no-repeat;
         height: 342px;
         margin-top: 300px;
     }
+
+
     .bracket-container {
         position: absolute;
         height: 100%;
         width: 60px;
         left: 300px;
+        margin-top: -57px;
         overflow:hidden;
     }
     .bracket {
@@ -146,12 +159,15 @@
         </div>
     </div>
 
+    <div class="case-bottom">
+    </div>
+
     <div class="bracket-container">
         <div class="bracket">
         </div>
     </div>
 
-    <div class="case case-bottom">
+    <div class="case case-description">
         <p class="case-title" style="color:black">This is the bottom case</p>
     </div>
 
@@ -167,6 +183,12 @@
         <clipPath id="clip-svg-path3" clipPathUnits="objectBoundingBox">
           <polygon points="0.03 0.25, 0.14 0, 1 0, 1 0.78, 0.14 0.78, 0.03 1" />
         </clipPath>
+
+        <clipPath id="clip-svg-path-bottom" clipPathUnits="objectBoundingBox">
+          <polygon points="0.12 -0.11, 0 0, 1 0, 0.88 1, 0 1, 0 0.98" />
+        </clipPath>
+                -webkit-clip-path: polygon(12% -11%, 0% 0%, 100% 0%, 88% 100%, 0% 100%, 0% 98%)
+
 
       </defs>   
     </svg> 
