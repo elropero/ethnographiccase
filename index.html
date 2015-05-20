@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <title>title</title>
     <style type="text/css">
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 300;
+    }
     .shell {
         width: 693px;
         position:absolute;
         right: 0;
-
     }
     .logo {
         margin-left: 52px;
@@ -76,7 +79,7 @@
         background-color: #eee;
         width: 6px;
         height: 326px;
-        left: 100px;
+        left: 94px;
         z-index: 1;
     }
     .case-title {
@@ -87,16 +90,17 @@
         left: 120px;
         margin: 0;
         float: left;
-        max-width: 60%;
+        max-width: 70%;
     }
     .case-description {
         background-image: url("./img/bottom.png");
         background-repeat: no-repeat;
         height: 342px;
         margin-top: 300px;
+        line-height: 1.6;
     }
     .case-description .case-title {
-        font-weight: 700;
+        
     }
 
 
@@ -160,8 +164,6 @@
         </div>
     </div>
 
-
-
     <div class="case case-3">
         <div class="case-title">
             Case 3
@@ -180,7 +182,9 @@
     </div>
 
     <div class="case case-description">
-        <p class="case-title" style="color:black">This is the bottom case</p>
+        <p class="case-title" style="color:black">
+        Over the next year we will bring you a series of “ethnographic cases.” To pay homage to the traditional ethnographic monograph, the pieces will be collected in an expanding bookCASE. The virtual-format of this bookCase makes evident that today’s monograph can be a very different thing than the monograph of ethnographies' past. Clicking the cases may link to straight-forward text, but you may also find yourself amidst audio or video files, photographs, artwork, and more.      
+        </p>
     </div>
 </div>
     <!-- SVG clip paths -->
@@ -199,7 +203,6 @@
         <clipPath id="clip-svg-path-bottom" clipPathUnits="objectBoundingBox">
           <polygon points="0.12 -0.11, 0 0, 1 0, 0.88 1, 0 1, 0 0.98" />
         </clipPath>
-                -webkit-clip-path: polygon(12% -11%, 0% 0%, 100% 0%, 88% 100%, 0% 100%, 0% 98%)
 
 
       </defs>   
