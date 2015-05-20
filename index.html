@@ -35,19 +35,22 @@
     }
     .bg-case-1 {
         background-image: url("./img/bark_bw.jpg");
+        -webkit-clip-path: url("#clip-svg-path1");
+        clip-path: url("#clip-svg-path1");
         -webkit-clip-path: polygon(0% 23%, 14% 0%, 100% 0%, 100% 78%, 14% 78%, 0% 100%);
         clip-path: polygon(0% 23%, 14% 0%, 100% 0%, 100% 78%, 14% 78%, 0% 100%);
-
     }
     .bg-case-2 {
         background-image: url("./img/leaf.jpg");
+        -webkit-clip-path: url("#clip-svg-path2");
+        clip-path: url("#clip-svg-path2");
         -webkit-clip-path: polygon(5% 16%, 14% 0%, 100% 0%, 100% 78%, 14% 78%, 5% 96%);
         clip-path: polygon(5% 16%, 14% 0%, 100% 0%, 100% 78%, 14% 78%, 5% 96%);
-        /*clip-path: url("#clip-svg-path2");
-        -webkit-clip-path: url("#clip-svg-path2");*/
     }
     .bg-case-3 {
         background-image: url("./img/DSC07420.jpg");
+        -webkit-clip-path: url("#clip-svg-path3");
+        clip-path: url("#clip-svg-path3");
         -webkit-clip-path: polygon(3% 25%, 14% 0%, 100% 0%, 100% 78%, 14% 78%, 3% 100%);
         clip-path: polygon(3% 25%, 14% 0%, 100% 0%, 100% 78%, 14% 78%, 3% 100%);
     }
@@ -107,15 +110,6 @@
             <div class="spine"></div>
         </div>
     </div>
-<!--
-    <svg class="clip-svg2">
-          <defs>
-        <clipPath id="clip-svg-path2" clipPathUnits="objectBoundingBox">
-          <polygon points="0.25 0, 0.75 0, 1 0.5, 0.75 1, 0.25 1, 0 0.5" />
-        </clipPath>
-    </defs>   
-</svg>
--->
 
 
 
@@ -129,6 +123,21 @@
     </div>
 
 
-     
+    <svg>
+      <defs>
+        <clipPath id="clip-svg-path1" clipPathUnits="objectBoundingBox">
+          <polygon points="0 0.23, 0.14 0, 1 0, 1 0.78, 0.14 0.78, 0 1" />
+        </clipPath>
+        <clipPath id="clip-svg-path2" clipPathUnits="objectBoundingBox">
+          <polygon points="0.05 0.16, 0.14 0, 1 0, 1 0.78, 0.14 0.78, 0.05 .96" />
+        </clipPath>
+        <clipPath id="clip-svg-path3" clipPathUnits="objectBoundingBox">
+          <polygon points="0.03 0.25, 0.14 0, 1 0, 1 0.78, 0.14 0.78, 0.03 1" />
+        </clipPath>
+
+      </defs>   
+    </svg> 
+
+
  </body>
 </html>
