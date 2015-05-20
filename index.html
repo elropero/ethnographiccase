@@ -22,6 +22,7 @@
     }
     .case-3 {
         height: 326px;
+        margin-bottom: -50px;
     }
     div[class*="bg-case-"] {
         background-size: cover;
@@ -69,6 +70,19 @@
         top: 40px;
         left: 100px;
         margin: 0;
+    }
+    .bracket-container {
+        position: absolute;
+        height: 100%;
+        width: 60px;
+        left: 300px;
+        overflow:hidden;
+    }
+    .bracket {
+        background-image: url("./img/bracket-tall.png");
+        background-repeat: no-repeat;
+        height: 5000px;
+        width: 100px;
     }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -122,6 +136,10 @@
         </div>
     </div>
 
+    <div class="bracket-container">
+        <div class="bracket">
+        </div>
+    </div>
 
     <svg>
       <defs>
